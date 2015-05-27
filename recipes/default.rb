@@ -3,8 +3,8 @@
 # Recipe:: default
 #
 
-%w('infoblox' 'fog' 'rbvmomi').each |gem_item| do
-	chef_gem gem_item do
+%w('infoblox' 'fog' 'rbvmomi').each do |gem_item|
+  chef_gem gem_item do
     action :install 
   end
 end
